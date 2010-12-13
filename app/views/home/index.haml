@@ -1,6 +1,21 @@
-Witaj na stronie CPPA!
-- @news.each do |news_item|
-  %h3= news_item.title
-  %p=  news_item.content
-  %hr
+- if notice
+  %p{:id => 'notice'}= notice
+
+#banner
+  Witaj na stronie CPPA!
   %br/
+#user_info
+  - unless user_signed_in?
+    = link_to "Zaloguj się przez facebooka", user_omniauth_authorize_path(:facebook)
+    -#= link_to image_tag("login-button.png"), user_omniauth_authorize_path(:facebook)
+  - else
+    Zalogowany jako:
+    = current_user.name
+    %br/
+    = link_to "wyloguj", destroy_user_session_path
+- @news.each do |news_item|
+  #news_entry
+    %h3= news_item.title
+    %p=  sanitize news_item.content
+    %hr
+    %br/

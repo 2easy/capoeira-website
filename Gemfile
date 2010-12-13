@@ -10,6 +10,9 @@ gem 'haml'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'devise', :tag => 'v1.2.rc', :git => "https://github.com/plataformatec/devise.git"
+gem 'oa-oauth' , :require => 'omniauth/oauth'
+#gem 'oauth2', :git => 'git://github.com/intridea/oauth2.git'
+#gem 'omniauth'
 
 # Use unicorn as the web server
 # gem 'unicorn'
