@@ -1,0 +1,151 @@
+/* Global styles */
+
+#banner {
+  background: #ff6633;
+  width:100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  color: #000000;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  text-align: center;
+}
+
+
+#navigation_bar {
+  float: left;
+  /*
+  padding-top: 1em;
+  padding-bottom:1em;
+  padding-left:1em;
+  */
+  width: 15em;
+  background: #993300;
+}
+
+#navigation_bar a:link, a:visited {
+  display:block;
+  font-weight:bold;
+  font-size:20px;
+  color: #ffffff;
+  background-color:#993300;
+  text-align:center;
+  text-decoration:none;
+  padding:4px;
+}
+
+#navigation_bar a:hover,a:active {
+  background-color: #662200;
+}
+
+
+.user_info {
+  float: right;
+  font-weight: bold;
+  color: #000000;
+}
+
+.user_info a {
+  text-decoration :none;
+}
+
+
+#columns {
+  background: #141;
+}
+
+#main {
+  margin-left: 13em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: white;
+}
+/* Styles for home/index */
+
+.news {
+  margin-left: 20%;
+  border-collapse: collapse;
+  position:center;
+  font-size:larger;
+}
+
+.news table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.news .news_image {
+  width:        60px;
+  height:       70px;
+}
+
+.news .news_description {
+  width:       95%;
+}
+
+.news .news_description dl {
+  margin: 0;
+}
+
+.news .news_description dt {
+  color:        #000000;
+  font-weight:  bold;
+  font-size:    larger;
+}
+
+.news .news_description dd {
+  margin: 0;
+}
+
+.news .news_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+.news .list_line_even {
+  background:   #ff6600;
+}
+
+.news .list_line_odd {
+  background:   #ff9900;
+}
+
+/* An entry in the news catalog */
+
+.news .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+
+.news .title {
+  font-size: 200%;
+  font-family: sans-serif;
+}
+
+.news .entry h3 {
+ margin-top: 0;
+ margin-bottom: 2px;
+ color: #227;
+}
+
+.news .entry p {
+ margin-top: 0.5em;
+ margin-bottom: 0.8em;
+}
+
+.news .entry .price_line {
+ clear: both;
+ margin-bottom: 0.5em;
+}
+
+.news .entry .add_to_cart {
+  position: relative;
+}
+
+.news .entry  .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 2em;
+}

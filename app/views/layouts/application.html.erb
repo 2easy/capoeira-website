@@ -6,9 +6,37 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body id="home">
 
-<%= yield %>
+  <div id="banner">
+    Companhia Pernas Pro Ar
+  </div>
+
+  <div class="user_info">
+    <% unless user_signed_in? %>
+      <%= link_to("Zaloguj się przez facebooka", user_omniauth_authorize_path(:facebook)) %>
+      <% #link_to image_tag("login-button.png"), user_omniauth_authorize_path(:facebook) %>
+    <% else %>
+      <%= "Zalogowany jako: #{current_user.name}" %>
+      <br/>
+      <%= link_to "wyloguj", destroy_user_session_path %>
+    <% end %>
+  </div>
+
+  <div id="navigation_bar">
+    <%= link_to "Start", "/"%>
+    <% if user_signed_in? %>
+      <%= link_to "Aktualności","/" %>
+      <%= link_to "Teksty Piosenek", "/" %>
+      <%= link_to "Zdjęcia", "/" %>
+    <% end %>
+    <%= link_to "Linki", "/" %>
+    <%= link_to "Kontakt", "/" %>
+  </div>
+
+  <div id="main">
+    <%= yield %>
+  </div>
 
 </body>
 </html>

@@ -1,21 +1,14 @@
+.news
+  %table
+    - @news.each do |news_item|
+      %tr{:class => [cycle('list_line_odd','list_line_even')]}
+        %td.news_description
+          %dl
+            %dt= news_item.title
+            %dd= strip_tags(news_item.content)
+          %td.news_actions
+            %br= link_to 'Pokaż',news_item
+            -#%br= link_to 'Skomentuj',new_comment_news_path
+%br/
 - if notice
-  %p{:id => 'notice'}= notice
-
-#banner
-  Witaj na stronie CPPA!
-  %br/
-#user_info
-  - unless user_signed_in?
-    = link_to "Zaloguj się przez facebooka", user_omniauth_authorize_path(:facebook)
-    -#= link_to image_tag("login-button.png"), user_omniauth_authorize_path(:facebook)
-  - else
-    Zalogowany jako:
-    = current_user.name
-    %br/
-    = link_to "wyloguj", destroy_user_session_path
-- @news.each do |news_item|
-  #news_entry
-    %h3= news_item.title
-    %p=  sanitize news_item.content
-    %hr
-    %br/
+  %p.notice= notice
