@@ -5,9 +5,13 @@
     %th
     %th
     %th
+    %th
+    %th
 
   - @news.each do |news|
     %tr
+      %td= @news.title
+      %td= @news.content
       %td= link_to 'Show', news
       %td= link_to 'Edit', edit_news_path(news)
       %td= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete
