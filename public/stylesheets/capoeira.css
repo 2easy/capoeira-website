@@ -15,13 +15,11 @@ p {
 }
 
 a:link, a:visited {
-    display:block;
-    color: #000000;
-    padding:10px;
+    text-decoration:none;
 }
 
-a:hover, a:active {
-    background-color: #ffffff;
+#navigation a:hover, a:active {
+    background-color: #ff9900;
 }
 
 #banner h1 {
@@ -55,7 +53,7 @@ a:hover, a:active {
 }
 
 #footer {
-    background: #333;
+    background: #000000;
     color: #FFF;
 }
 
@@ -81,8 +79,11 @@ a:hover, a:active {
     font-weight:bold;
 }
 
-#navigation a {
-    text-decoration:none;
+#navigation a:link, a:visited {
+   display:block;
+   color: #000000;
+   padding:10px;
+   text-decoration:none;
 }
 
 #extra {
@@ -106,11 +107,6 @@ a:hover, a:active {
 .news table tr td {
   vertical-align: top;
   padding: 5px;
-}
-
-.news .news_image {
-  width:        60px;
-  height:       70px;
 }
 
 .news .news_description {

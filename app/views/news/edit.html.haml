@@ -1,7 +1,7 @@
-%h1 Editing news
+%h2= "Edytujesz \"#{@news_item.title}\""
 
 = render 'form'
 
-= link_to 'Show', @news
+= link_to 'Pokaż', @news_item
 \|
-= link_to 'Back', news_index_path
+= link_to 'Powrót', news_index_path

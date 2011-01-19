@@ -1,8 +1,9 @@
 %p#notice= notice
 
-%p= @news.title
-%p= @news.content
+%p= @news_item.title
+%p= @news_item.content
 
-= link_to 'Edit', edit_news_path(@news)
-\|
+- if current_user and current_user.admin?
+  = link_to 'Edit', edit_news_path(@news_item)
+  \|
 = link_to 'Back', news_index_path

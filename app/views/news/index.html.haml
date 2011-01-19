@@ -1,21 +1,17 @@
-%h1 Listing news
-
-%table
-  %tr
-    %th
-    %th
-    %th
-    %th
-    %th
-
-  - @news.each do |news|
-    %tr
-      %td= @news.title
-      %td= @news.content
-      %td= link_to 'Show', news
-      %td= link_to 'Edit', edit_news_path(news)
-      %td= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New News', new_news_path
+- if current_user and current_user.admin?
+  = link_to 'Dodaj nową aktualność', new_news_path
+  %br
+.news
+  %table
+    - @news.each do |news_item|
+      %tr{:class => [cycle('list_line_odd','list_line_even')]}
+        %td.news_description
+          %dl
+            %dt= news_item.title
+            %dd= strip_tags(news_item.content)
+          %td.news_actions
+            %br= link_to 'Pokaż',news_item
+            - if current_user and current_user.admin?
+              %br= link_to 'Edytuj', edit_news_path(news_item)
+              %br= link_to 'Usuń', news_item, :confirm => 'Jesteś pewny czy usunąć?', :method => :delete
+            -#%br= link_to 'Skomentuj',new_comment_news_path
