@@ -19,12 +19,12 @@
 
     <div id="navigation">
         <%= link_to "Start", "/"%>
+        <%= link_to "Aktualności","/news" %>
         <% if user_signed_in? %>
-            <%= link_to "Aktualności","/" %>
             <%= link_to "Teksty Piosenek", "/" %>
             <%= link_to "Zdjęcia", "/" %>
         <% end %>
-        <%= link_to "Linki", "/" %>
+        <%= link_to "Linki", links_path %>
         <%= link_to "Kontakt", "/" %>
             <% unless user_signed_in? %>
                 <%= link_to("Zaloguj się przez facebooka", user_omniauth_authorize_path(:facebook)) %>
