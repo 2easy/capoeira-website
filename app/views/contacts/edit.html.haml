@@ -1,0 +1,11 @@
+- form_for @contact do |f|
+  .field
+    %p
+      %b= f.label "Edytujesz kontakt"
+  .field
+    %p
+      = f.text_area :content
+  .actions
+    = f.submit "Zapisz"
+%p
+  %b= link_to "Powrót", contact_path

@@ -1,0 +1,4 @@
+%p= @contact.content
+- if current_user and current_user.admin?
+  %p
+    %b= link_to "Edytuj", edit_contact_path(@contact)
