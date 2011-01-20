@@ -161,7 +161,11 @@ Devise.setup do |config|
   # up on your models and hooks.
   # first heroku!  config.omniauth :facebook, '172133932819464', '2e9e4d30ac45b217962c1ec9c051d642'
 
-  config.omniauth :facebook, '166746966699723', '54acc16649fe0751c8b03f8c73a849d8'
+  config.omniauth :facebook, '172133932819464', '2e9e4d30ac45b217962c1ec9c051d642'
+  # testing
+  # config.omniauth :facebook, '166746966699723', '54acc16649fe0751c8b03f8c73a849d8'
+  #
+  #
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
