@@ -1,142 +1,38 @@
 /* Global styles */
 
 html,body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font: 76% arial,sans-serif;
-    text-align:center;
-}
-
-p {
-    margin:0 10px 10px;
-}
-
-a:link, a:visited {
-    text-decoration:none;
-}
-
-#navigation a:hover, a:active {
-    background-color: #ff9900;
-}
-
-#banner h1 {
-    margin:0;
-    padding:0.5em;
-    border-bottom: 1px solid black;
-
-    background: #ff6633;
-    color: #000000;
-
-    font: small-caps 40px/40px "Times New Roman", serif;
-
-    clear:left;
+    text-align: center;
 }
 
 #container {
-    text-align:left;
-    border:1px solid gray;
+    text-align: left;
+    border: 1px solid gray;
+    width: 780px;
+    margin: 0 auto;
 }
 
+#content {
+    background-color: #ededed;
+    float: left;
+    width: 550px;
+}
 #content p {
     line-height:1.4;
-}
-
-#navigation {
-    background: #ff6633;
-}
-
-#extra {
-    background:#FF8539;
 }
 
 #footer {
     background: #000000;
     color: #FFF;
+    clear: both;
+    width: 100%;
 }
-
 #footer p {
-    margin:0;
-    padding:5px 10px
-}
-
-#container {
-    width:900px;
-    margin:0 auto;
-}
-
-#content {
-    float:right;
-    width:700px;
-}
-
-#navigation {
-    float:left;
-    width:200px;
-
-    font-weight:bold;
-}
-
-#navigation a:link, a:visited {
-   display:block;
-   color: #000000;
-   padding:10px;
-   text-decoration:none;
-}
-
-#extra {
-    float:right;
-    width:500px;
-}
-
-#footer {
-    clear:both;
-    width:100%;
-}
-
-/* Styles for home/index */
-
-.news {
-  border-collapse: collapse;
-  position:center;
-  font-size:larger;
-}
-
-.news table tr td {
-  vertical-align: top;
-  padding: 5px;
-}
-
-.news .news_description {
-  width:       95%;
-}
-
-.news .news_description dl {
-  margin: 0;
-}
-
-.news .news_description dt {
-  color:        #000000;
-  font-weight:  bold;
-  font-size:    larger;
-}
-
-.news .news_description dd {
-  margin: 0;
-}
-
-.news .news_actions {
-  font-size:    x-small;
-  text-align:   right;
-  padding-left: 1em;
-}
-
-.news .list_line_even {
-  background:   #ff6600;
-}
-
-.news .list_line_odd {
-  background:   #ff9900;
+    margin: 0;
+    padding: 5px 10px
 }

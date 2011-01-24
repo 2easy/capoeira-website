@@ -1,0 +1,42 @@
+#nav_bar {
+    width: 780px;
+    height: 24px;
+    background-image: url('../images/nav_bar.png');
+    z-index:-1;
+}
+
+.menu_button div {
+    width: 104px;
+    height: 24px;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: -17px;
+}
+
+.menu_button a {
+    display: block;
+    height:24px;
+    text-indent: -9999px;
+}
+
+.menu_button #start {
+    margin-left: 35px;
+    background-image: url('../images/start_button.png');
+}
+.menu_button #news {
+    background-image: url('../images/news_button.png');
+}
+.menu_button #songs {
+    background-image: url('../images/songs_button.png');
+}
+.menu_button #gallery {
+    background-image: url('../images/gallery_button.png');
+}
+.menu_button #links {
+    background-image: url('../images/links_button.png');
+}
+.menu_button #contact {
+    background-image: url('../images/contact_button.png');
+}

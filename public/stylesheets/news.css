@@ -1,0 +1,42 @@
+.news {
+  border-collapse: collapse;
+  position:center;
+  font-size:larger;
+}
+
+.news table tr td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+.news .news_description {
+  width:       95%;
+}
+
+.news .news_description dl {
+  margin: 0;
+}
+
+.news .news_description dt {
+  color:        #000000;
+  font-weight:  bold;
+  font-size:    larger;
+}
+
+.news .news_description dd {
+  margin: 0;
+}
+
+.news .news_actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+.news .list_line_even {
+  background:   #ff6600;
+}
+
+.news .list_line_odd {
+  background:   #ff9900;
+}

@@ -1,0 +1,37 @@
+%head
+  %title Capoeira
+  = stylesheet_link_tag :all
+  = javascript_include_tag :defaults
+  = csrf_meta_tag
+  %script{:type => 'text/javascript', :src => '../../../script/jquery-1.4.4.js'}
+%body
+  #container
+    #banner
+      - unless current_user
+        #login_button
+          = link_to 'facebook login', user_omniauth_authorize_path(:facebook), :title => 'Zaloguj się przez facebooka'
+      - else
+        #user_info
+          Zalogowany jako
+          %br/
+          = current_user.name
+          %p= link_to 'Wyloguj', destroy_user_session_path
+    #nav_bar
+      .menu_button
+        #start
+          = link_to 'start',    root_path, :title => 'Strona główna'
+        #news
+          = link_to 'news',     news_index_path, :title => 'Aktualności'
+        #gallery
+          = link_to 'gallery',  root_path, :title => 'Galeria zdjęć'
+        #songs
+          = link_to 'songs',    root_path, :title => 'Teksty piosenek'
+        #links
+          = link_to 'links',    links_path, :title => 'Linki'
+        #contact
+          = link_to 'contact',  contact_path, :title => 'Kontakt, dojazd'
+    #wrapper
+      #content
+        = yield
+    #footer
+      %p By Piotr Olchawa
