@@ -18,7 +18,9 @@
 .menu_button a {
     display: block;
     height:24px;
-    text-indent: -9999px;
+    /*text-indent: -9999px;*/
+    text-align: center;
+    color:transparent;
 }
 
 .menu_button #start {

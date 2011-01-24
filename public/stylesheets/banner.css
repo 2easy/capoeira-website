@@ -17,7 +17,8 @@
     display: block;
     height:64px;
     width:64;
-    text-indent: -9999px;
+    /*text-indent: -9999px;*/
+    color:transparent;
 }
 
 #user_info {
