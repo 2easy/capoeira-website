@@ -2,10 +2,10 @@
 
 one:
   user_id: 1
-  provider: MyString
-  uid: MyString
+  provider: facebook
+  uid: 3
 
 two:
-  user_id: 1
-  provider: MyString
-  uid: MyString
+  user_id: 2
+  provider: facebook
+  uid: 3

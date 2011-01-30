@@ -1,38 +1,37 @@
 /* Global styles */
-
-html,body {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font: 76% arial,sans-serif;
-    text-align: center;
 }
 
 #container {
-    text-align: left;
-    border: 1px solid gray;
     width: 780px;
+    border: 1px solid gray;
     margin: 0 auto;
 }
 
-#content {
-    background-color: #ededed;
-    float: left;
-    width: 550px;
+#content h1 {
+    margin:0;
 }
+
+#content {
+    background-color: #505050;
+    width: 600px;
+}
+
 #content p {
     line-height:1.4;
 }
 
 #footer {
-    background: #000000;
-    color: #FFF;
+    background: #282828;
+    color: #ededed;
     clear: both;
     width: 100%;
 }
 #footer p {
     margin: 0;
-    padding: 5px 10px
+    font-size: 0.9em;
+    padding: 5px 10px;
 }

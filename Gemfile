@@ -13,6 +13,13 @@ gem 'devise', :tag => 'v1.2.rc', :git => "https://github.com/plataformatec/devis
 gem 'oa-oauth' , :require => 'omniauth/oauth'
 gem 'hpricot'
 gem 'ruby_parser'
+gem 'jquery-rails'
+gem 'will_paginate', '~> 3.0.pre2'
+
+group :test do
+    gem 'capybara'
+    gem 'launchy'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -35,3 +42,5 @@ gem 'ruby_parser'
 # group :development, :test do
 #   gem 'webrat'
 # end
+#
+# vim: set filetype=ruby :

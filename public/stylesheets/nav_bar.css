@@ -1,44 +1,28 @@
 #nav_bar {
     width: 780px;
-    height: 24px;
+    height: 20px;
     background-image: url('../images/nav_bar.png');
     z-index:-1;
+    top:124px;
 }
 
-.menu_button div {
-    width: 104px;
-    height: 24px;
-    float:left;
-    margin-left: 5px;
+.menu_button {
+    margin-left:30px;
+    position:absolute;
+    top: 105px;
+}
+
+.menu_button img {
+    display:inline;
+    border:0px;
     margin-right: 5px;
-    position: relative;
-    top: -17px;
+    z-index:1;
 }
 
 .menu_button a {
-    display: block;
-    height:24px;
-    /*text-indent: -9999px;*/
-    text-align: center;
+    /*for no border when clicked*/
     color:transparent;
 }
 
-.menu_button #start {
-    margin-left: 35px;
-    background-image: url('../images/start_button.png');
-}
-.menu_button #news {
-    background-image: url('../images/news_button.png');
-}
-.menu_button #songs {
-    background-image: url('../images/songs_button.png');
-}
 .menu_button #gallery {
-    background-image: url('../images/gallery_button.png');
-}
-.menu_button #links {
-    background-image: url('../images/links_button.png');
-}
-.menu_button #contact {
-    background-image: url('../images/contact_button.png');
 }

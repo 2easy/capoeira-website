@@ -3,7 +3,9 @@ class NewsController < ApplicationController
   before_filter :authenticate_admin!, :except => [:show, :index]
 
   def index
-    @news = News.all
+    @news = News.paginate :page => params[:page],
+                          :order => 'updated_at DESC',
+                          :per_page => 1
   end
 
   def show

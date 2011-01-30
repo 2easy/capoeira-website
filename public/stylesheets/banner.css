@@ -2,27 +2,30 @@
     width: 780px;
     height: 124px;
     background-image: url('../images/banner.png');
+    position:relative;
+    /*
     z-index: -1;
+    */
 }
 
 #login_button {
-    background-image: url('../images/login_button.png');
     height: 64px;
     width: 64px;
-    float: right;
-    margin: 10px;
+    position: relative;
+    top:0px;
+    right:-710px;
 }
 
 #login_button a {
-    display: block;
+    /*display: block;*/
     height:64px;
     width:64;
-    /*text-indent: -9999px;*/
     color:transparent;
 }
 
 #user_info {
-    float:right;
+    position:absolute;
+    right:0px;
     margin: 10px;
     color: white;
 }

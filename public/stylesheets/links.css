@@ -1,0 +1,10 @@
+.links {
+    font-size:19px;
+    text-indent: 10px;
+    margin:0px;
+}
+
+.links a {
+    text-decoration:none;
+    color:white;
+}
